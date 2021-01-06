@@ -5,7 +5,6 @@ class ButtonPlus extends Component {
 
   handleOnClick = (event) => {
     console.log("Button Pressed");
-    // this.setState((prevState) => ({ counterPlus: prevState.counterPlus + 1 }));
     this.setState({
       ...this.state.counterPlus,
       counterPlus: this.state.counterPlus + 1,

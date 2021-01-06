@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 
 class ButtonMinus extends Component {
-  state = {};
+  state = { counterMinus: 0 };
 
-  handleOnClick = (event) => {
-    console.log("Button Pressed");
+  handleOnClickMinus = (event) => {
+    this.setState({
+      ...this.state,
+      counterMinus: this.state.counterMinus - 1,
+    });
+    console.log(this.state);
   };
 
   render() {
@@ -13,10 +17,11 @@ class ButtonMinus extends Component {
         <h3>This is ButtonMinus</h3>
         <button
           className="btn btn-success"
-          onClick={this.handleOnClick}
+          onClick={this.handleOnClickMinus}
           type="button"
+          value={this.props.buttonMinusValues.counterMinus}
         >
-          +
+          -
         </button>
       </div>
     );

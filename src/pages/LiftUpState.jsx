@@ -6,7 +6,23 @@ import Counter from "../components/Counter";
 import ButtonMinus from "../components/ButtonMinus";
 
 class LiftUpState extends Component {
-  state = {};
+  state = { mainCounter: 0 };
+
+  handleOnClick = (event) => {
+    this.setState({
+      ...this.state.mainCounter,
+      mainCounter: this.state.mainCounter,
+    });
+  };
+
+  handleOnClickMinus = (event) => {
+    // this.setState({
+    //   ...this.state,
+    //   mainCounter: this.state.mainCounter - 1,
+    // });
+    console.log(event);
+  };
+
   render() {
     return (
       <div className="container text-center">
@@ -18,7 +34,10 @@ class LiftUpState extends Component {
 
         <div className="row">
           <div className="col-4">
-            <ButtonMinus />
+            <ButtonMinus
+              onClick={this.props.handleOnClickMinus}
+              buttonMinusValues={this.props.handleOnClickMinus}
+            />
           </div>
           <div className="col-4">
             <Counter />
