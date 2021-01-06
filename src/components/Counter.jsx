@@ -15,10 +15,7 @@ const Counter = () => {
             Please, press the Plus (+) to increase the counter or the (-) Button
             to decrease the counter.
           </p>
-          <input type="text" value="Counter" />
-          {/* <a href="/" className="btn btn-primary">
-            Go somewhere
-          </a> */}
+          <input type="text" />
         </div>
       </div>
     </div>
