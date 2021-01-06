@@ -7,18 +7,18 @@ const Counter = () => {
   return (
     <div>
       <div className="card card-width">
-        {/* <img src="..." className="card-img-top" alt="..." /> */}
         <div className="card-body">
-          <h5 className="card-title">
+          <h5 className="card-title text-center">
             <strong>Counter Display</strong>
           </h5>
-          <p className="card-text">
+          <p className="card-text text-justify">
             Please, press the Plus (+) to increase the counter or the (-) Button
             to decrease the counter.
           </p>
-          <a href="/" className="btn btn-primary">
+          <input type="text" value="Counter" />
+          {/* <a href="/" className="btn btn-primary">
             Go somewhere
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

@@ -9,21 +9,22 @@ class LiftUpState extends Component {
   state = {};
   render() {
     return (
-      <div className="container">
-        <div className="row">
+      <div className="container text-center">
+        <div className="row mb-5">
           <div className="col">
             <h1>Lift Up State</h1>
           </div>
         </div>
+
         <div className="row">
           <div className="col-4">
-            <ButtonPlus />
+            <ButtonMinus />
           </div>
           <div className="col-4">
             <Counter />
           </div>
           <div className="col-4">
-            <ButtonMinus />
+            <ButtonPlus />
           </div>
         </div>
       </div>
