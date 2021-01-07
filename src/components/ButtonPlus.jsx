@@ -4,7 +4,6 @@ class ButtonPlus extends Component {
   state = { counterPlus: 0 };
 
   handleOnClick = (event) => {
-    console.log("Button Pressed");
     this.setState({
       ...this.state.counterPlus,
       counterPlus: this.state.counterPlus + 1,

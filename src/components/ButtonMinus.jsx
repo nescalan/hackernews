@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 
 class ButtonMinus extends Component {
-  state = { counterMinus: 0 };
+  // state = { counterMinus: 0 };
 
-  handleOnClickMinus = (event) => {
-    this.setState({
-      ...this.state,
-      counterMinus: this.state.counterMinus - 1,
-    });
-    console.log(this.state);
-  };
+  // handleOnClickMinus = () => {
+  //   this.setState({
+  //     ...this.state,
+  //     counterMinus: this.state.counterMinus - 1,
+  //   });
+  //   console.log(this.state);
+  // };
 
   render() {
     return (
@@ -17,9 +17,8 @@ class ButtonMinus extends Component {
         <h3>This is ButtonMinus</h3>
         <button
           className="btn btn-success"
-          onClick={this.handleOnClickMinus}
-          type="button"
-          value={this.props.buttonMinusValues.counterMinus}
+          onClick={this.props.onClick}
+          // buttonMinusValues={}
         >
           -
         </button>
