@@ -8,21 +8,19 @@ import ButtonMinus from "../components/ButtonMinus";
 class LiftUpState extends Component {
   state = { mainCounter: 0 };
 
-  handleOnChange = () => {
+  handleOnChangeMinus = () => {
     this.setState({
       ...this.state.mainCounter,
       mainCounter: this.state.mainCounter - 1,
     });
   };
 
-  // handleOnChange = () => {
-  //   // this.setState({
-  //   //   ...this.state,
-  //   //   mainCounter: this.state.mainCounter - 1,
-  //   // });
-  //   // console.log(this.state.mainCounter);
-  //   alert("This is ClickMinus");
-  // };
+  handleOnChangePlus = () => {
+    this.setState({
+      ...this.state.mainCounter,
+      mainCounter: this.state.mainCounter + 1,
+    });
+  };
 
   render() {
     return (
@@ -36,15 +34,18 @@ class LiftUpState extends Component {
         <div className="row">
           <div className="col-4">
             <ButtonMinus
-              onClick={this.handleOnChange}
-              buttonMinusValues={this.state.mainCounter}
+              onClick={this.handleOnChangeMinus}
+              estado={this.state.mainCounter}
             />
           </div>
           <div className="col-4">
-            <Counter />
+            <Counter contador={this.state.mainCounter} />
           </div>
           <div className="col-4">
-            <ButtonPlus />
+            <ButtonPlus
+              onClick={this.handleOnChangePlus}
+              estado={this.state.mainCounter}
+            />
           </div>
         </div>
       </div>
