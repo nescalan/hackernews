@@ -1,5 +1,5 @@
-Esta es la historia de Freddy Vega
+Esta es la historia de Nelson Gonzalez
 
-Freddy Vega tiene 32 años y nació en Colombia
+Nelson tiene 45 años y nació en Costa Rica
 
 Mañana nos enfocaremos en su vida laboral
