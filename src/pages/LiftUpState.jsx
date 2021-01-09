@@ -8,13 +8,14 @@ import ButtonMinus from "../components/ButtonMinus";
 class LiftUpState extends Component {
   state = { mainCounter: 0 };
 
-  handleOnChange = () => {
+  handleOnChangeMinus = () => {
     this.setState({
       ...this.state.mainCounter,
       mainCounter: this.state.mainCounter - 1,
     });
   };
 
+<<<<<<< HEAD
   // handleOnChange = () => {
   //   this.setState({
   //     ...this.state,
@@ -23,6 +24,14 @@ class LiftUpState extends Component {
   //   console.log(this.state.mainCounter);
   //   alert("This is ClickMinus");
   // };
+=======
+  handleOnChangePlus = () => {
+    this.setState({
+      ...this.state.mainCounter,
+      mainCounter: this.state.mainCounter + 1,
+    });
+  };
+>>>>>>> 1a66f76468751451fa6cde102c84108dafc4ebf1
 
   render() {
     return (
@@ -35,6 +44,7 @@ class LiftUpState extends Component {
 
         <div className="row">
           <div className="col-4">
+<<<<<<< HEAD
             <ButtonMinus onClick={this.handleOnChange} />
           </div>
           <div className="col-4">
@@ -42,6 +52,21 @@ class LiftUpState extends Component {
           </div>
           <div className="col-4">
             <ButtonPlus onClick={this.handleOnChange} />
+=======
+            <ButtonMinus
+              onClick={this.handleOnChangeMinus}
+              estado={this.state.mainCounter}
+            />
+          </div>
+          <div className="col-4">
+            <Counter contador={this.state.mainCounter} />
+          </div>
+          <div className="col-4">
+            <ButtonPlus
+              onClick={this.handleOnChangePlus}
+              estado={this.state.mainCounter}
+            />
+>>>>>>> 1a66f76468751451fa6cde102c84108dafc4ebf1
           </div>
         </div>
       </div>
