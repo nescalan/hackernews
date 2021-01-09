@@ -17,7 +17,7 @@ const Counter = () => {
             Please, press the Plus (+) to increase the counter or the (-) Button
             to decrease the counter.
           </p>
-          <input type="text" />
+          <input type="text" value="main" />
         </div>
       </div>
     </div>

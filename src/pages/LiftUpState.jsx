@@ -16,11 +16,11 @@ class LiftUpState extends Component {
   };
 
   // handleOnChange = () => {
-  //   // this.setState({
-  //   //   ...this.state,
-  //   //   mainCounter: this.state.mainCounter - 1,
-  //   // });
-  //   // console.log(this.state.mainCounter);
+  //   this.setState({
+  //     ...this.state,
+  //     mainCounter: this.state.mainCounter - 1,
+  //   });
+  //   console.log(this.state.mainCounter);
   //   alert("This is ClickMinus");
   // };
 
@@ -35,16 +35,13 @@ class LiftUpState extends Component {
 
         <div className="row">
           <div className="col-4">
-            <ButtonMinus
-              onClick={this.handleOnChange}
-              buttonMinusValues={this.state.mainCounter}
-            />
+            <ButtonMinus onClick={this.handleOnChange} />
           </div>
           <div className="col-4">
-            <Counter />
+            <Counter valueLiftUpState={this.props.mainCounter} />
           </div>
           <div className="col-4">
-            <ButtonPlus />
+            <ButtonPlus onClick={this.handleOnChange} />
           </div>
         </div>
       </div>
